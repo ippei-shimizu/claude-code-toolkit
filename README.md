@@ -4,10 +4,11 @@ Claude Code 用の共通スキル・エージェントプラグイン。プロ�
 
 ## インストール
 
-プロジェクトの `.claude/plugins/` にクローン:
+プロジェクトの `.claude/plugins/` にクローン（gstackサブモジュール含む）:
 
 ```bash
-git clone https://github.com/ippei-shimizu/claude-code-toolkit.git .claude/plugins/claude-code-toolkit
+git clone --recurse-submodules https://github.com/ippei-shimizu/claude-code-toolkit.git .claude/plugins/claude-code-toolkit
+cd .claude/plugins/claude-code-toolkit/skills/gstack && ./setup
 ```
 
 `.gitignore` に追加:
@@ -25,6 +26,7 @@ git clone https://github.com/ippei-shimizu/claude-code-toolkit.git .claude/plugi
 | `vercel-react-best-practices` | Vercel Engineering によるReact/Next.jsパフォーマンス最適化（65ルール） | React/Next.jsコード作業時に自動適用 |
 | `vercel-composition-patterns` | Reactコンポジションパターン（8ルール、React 19対応） | コンポーネント設計・リファクタリング時に自動適用 |
 | `react-native-skills` | React Native/Expoベストプラクティス | モバイルアプリ開発時に自動適用 |
+| `gstack` | Claude Code用エンジニアリングツールスイート（QA, レビュー, デプロイ等28コマンド） | `/qa`, `/review`, `/ship` 等のスラッシュコマンド |
 
 ### エージェント
 
@@ -39,7 +41,6 @@ git clone https://github.com/ippei-shimizu/claude-code-toolkit.git .claude/plugi
 
 | プラグイン | 説明 | インストール |
 |-----------|------|------------|
-| [gstack](https://github.com/garrytan/gstack) | Claude Code用エンジニアリングツールスイート（QA, レビュー, デプロイ等28コマンド） | `git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git .claude/skills/gstack && cd .claude/skills/gstack && ./setup` |
 | [superpowers](https://github.com/anthropics/claude-code-superpowers) | Claude Code公式の拡張スキル（TDD, デバッグ, プラン作成等） | Claude Code プラグインとして自動インストール |
 
 ## ライセンス
