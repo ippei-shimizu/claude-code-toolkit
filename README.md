@@ -27,6 +27,18 @@ cd .claude/plugins/claude-code-toolkit/skills/gstack && ./setup
 | `vercel-composition-patterns` | Reactコンポジションパターン（8ルール、React 19対応） | コンポーネント設計・リファクタリング時に自動適用 |
 | `react-native-skills` | React Native/Expoベストプラクティス | モバイルアプリ開発時に自動適用 |
 | `gstack` | Claude Code用エンジニアリングツールスイート（QA, レビュー, デプロイ等28コマンド） | `/qa`, `/review`, `/ship` 等のスラッシュコマンド |
+| `frontend-design` | 高品質なフロントエンドUI作成（AIスロップ回避） | UIコンポーネント・ページ作成時 |
+| `ui-ux-pro-max` | UI/UXデザイン総合（50+スタイル、97パレット、57フォント） | UI/UXデザイン作業時 |
+| `design-lab` | 5つのデザインバリエーション生成・比較ワークフロー | デザイン探索時 |
+| `interaction-design` | マイクロインタラクション・モーションデザイン | アニメーション・トランジション実装時 |
+| `canvas-design` | ビジュアルアート作成（.png/.pdf） | ポスター・アート作成時 |
+| `12-principles-of-animation` | Disney 12原則に基づくアニメーション監査 | アニメーションレビュー時 |
+| `baseline-ui` | AIスロップ防止のUIベースライン | UI実装時に自動適用 |
+| `fixing-accessibility` | HTMLアクセシビリティ問題の監査・修正 | アクセシビリティ修正時 |
+| `fixing-metadata` | HTMLメタデータ（OG, JSON-LD等）の監査・修正 | メタデータ修正時 |
+| `fixing-motion-performance` | アニメーションパフォーマンス監査・修正 | アニメーションパフォーマンス改善時 |
+| `wcag-audit-patterns` | WCAG 2.2アクセシビリティ監査 | アクセシビリティ監査時 |
+| `web-design-guidelines` | Vercel Web Interface Guidelinesに基づくUIレビュー | UIレビュー時 |
 
 ### エージェント
 
