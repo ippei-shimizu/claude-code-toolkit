@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git diff *)",
+      "Bash(git diff * | head *)",
+      "Bash(git diff * 2>&1 | head *)",
+      "Bash(git diff * 2>&1; *)",
+      "Bash(git log *)",
+      "Bash(git status)",
+      "Bash(git status *)",
+      "Bash(git status --short && *)",
+      "Bash(git branch *)",
+      "Bash(git branch --show-current && *)",
+      "Bash(git add *)",
+      "Bash(git add * && git commit *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git remote -v)",
+      "Bash(for *; do *; done)",
+      "Bash(gh pr view *)",
+      "Bash(gh pr diff *)",
+      "Bash(gh pr list *)",
+      "Bash(gh pr create *)",
+      "Bash(gh issue view *)",
+      "Bash(gh issue list *)",
+      "Bash(gh api graphql *)",
+      "Bash(cat *)",
+      "Bash(ls *)",
+      "Bash(ls -la *)",
+      "Bash(ls * 2>/dev/null || echo *)",
+      "Bash(ls -la * 2>/dev/null)",
+      "Bash(find *)",
+      "Bash(wc *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(grep *)",
+      "mcp__serena__*"
+    ],
+    "deny": [
+      "Bash(curl *)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)",
+      "Read(./**/credentials.yml.enc)",
+      "Read(./**/master.key)",
+      "Bash(rm -rf *)",
+      "Bash(git merge *)"
+    ]
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "pr-review-toolkit@claude-plugins-official": true,
+    "ralph-loop@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "plugin-dev@claude-plugins-official": true
+  }
+}

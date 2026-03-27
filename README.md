@@ -159,6 +159,16 @@ claude-code-toolkit/
     └── gstack/                        # サブモジュール
 ```
 
+## settings.template.json
+
+新プロジェクト開始時に `.claude/settings.json` のベースとして使えるテンプレート。
+
+```bash
+cp .claude/plugins/claude-code-toolkit/settings.template.json .claude/settings.json
+```
+
+プロジェクト固有の設定（`cd` パス、追加の `enabledPlugins` 等）は手動で追記する。
+
 ## ライセンス
 
 MIT
