@@ -1,0 +1,5 @@
+{
+  "name": "claude-code-toolkit",
+  "description": "共通スキル・エージェントのプラグイン。React/Next.js/React Native/RSpecのベストプラクティスとgstack使い方ガイド。",
+  "version": "1.0.0"
+}
