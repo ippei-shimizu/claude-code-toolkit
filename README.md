@@ -22,7 +22,6 @@ git clone https://github.com/ippei-shimizu/claude-code-toolkit.git .claude/plugi
 
 | スキル | 説明 | トリガー |
 |--------|------|----------|
-| `rspec-behavior-test` | 古典派テスト（振る舞いテスト）方針のRSpecテスト作成 | 「テストを書いて」「specを追加して」 |
 | `vercel-react-best-practices` | Vercel Engineering によるReact/Next.jsパフォーマンス最適化（65ルール） | React/Next.jsコード作業時に自動適用 |
 | `vercel-composition-patterns` | Reactコンポジションパターン（8ルール、React 19対応） | コンポーネント設計・リファクタリング時に自動適用 |
 | `react-native-skills` | React Native/Expoベストプラクティス | モバイルアプリ開発時に自動適用 |
